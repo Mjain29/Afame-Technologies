@@ -1,0 +1,87 @@
+body
+{
+background-color: rgb(255, 228, 196);
+}
+h1
+{
+color:rgb(0, 0, 0);
+text-decoration: underline 2px solid black;
+font-size:30px;
+font-style:bold;
+font-family:Cursive;
+text-align:center;
+}
+*{box-sizing: border-box; margin: 0;}
+.Calculator
+{
+    background-color: black;
+    width: 23%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border: 3px solid rgb(212, 205, 205);
+    border-radius: 10px;
+    box-shadow: 2px 5px rgb(78, 76, 76) inset;
+}
+.Buttons
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 16px;
+    margin-top: 14px;
+}
+#Result
+{
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(178, 219, 225);
+    font-size: 24px;
+    border: 3px groove white;
+    border-radius: 5px;
+    box-shadow: 2px 5px rgb(52, 39, 151) inset;
+}
+button
+{
+    padding: 10px;
+    border: 3px groove darkgray;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover
+{
+    background-color:rgb(244, 143, 160);
+}
+.clear
+{
+    background-color: red;
+}
+.operator, .equals, .decimal
+{
+    background-color: rgba(196, 178, 192, 0.915);
+}
+.equals
+{
+    grid-row: span 3;
+}
+.Zero
+{
+    grid-column: span 2;
+}
+button.operator:hover 
+{
+    background-color:rgb(140, 228, 181);
+}
+button.equals:hover 
+{
+    background-color:rgb(237, 203, 169);
+}
+button.decimal:hover 
+{
+    background-color:rgb(237, 203, 169);
+}
+button.clear:hover 
+{
+    background-color:rgb(232, 219, 219);
+}
